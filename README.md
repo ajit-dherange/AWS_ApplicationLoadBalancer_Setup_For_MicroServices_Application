@@ -39,7 +39,7 @@
 7) Add Inbound Rule in the security group to allow port 80 traffic
 
 
-Note: You can verify web service is working fine or not by accessing server with its public IP
+Note: You can verify web service is working fine by bwosing Web server using its public IP
 
 
 # Phase 2: Create Load Balancer

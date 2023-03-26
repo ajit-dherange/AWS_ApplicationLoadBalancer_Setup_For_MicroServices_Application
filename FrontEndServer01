@@ -1,0 +1,8 @@
+#!/bin/bash
+sudo su
+yum update -y
+yum install httpd -y
+cd /var/www/html
+echo "Welcome To Microservice App Setup Demo - Server_01" >index.html (echo "<html><h1>Server_01</h1></html>">index.html)
+service httpd start
+chkconfig httpd on

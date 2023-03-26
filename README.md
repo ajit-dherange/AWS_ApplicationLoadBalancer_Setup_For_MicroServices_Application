@@ -64,6 +64,7 @@ Step 3
 
 13) Goto Load Balancer Tab > refresh Taeget Group section > select "TrainTG" > Create Load Balancer
 
+
 Step 4
 
 14) Goto Load Balancer Tab > "mymsalb01" > Listeners > HTTP:80 > rules > Manage Rules > + > Insert Rules

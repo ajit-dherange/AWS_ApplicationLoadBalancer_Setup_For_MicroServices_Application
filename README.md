@@ -1,44 +1,31 @@
 # AWS_ApplicationLoadBalancer_Setup_For_MicroServices_Application
 
-#Phase 1 : Create Web Servers Pool
+#Phase 1 : Create Web Server Pools (Front End, Train, Flight)
 
-1) Create Two EC2 Instances For Frontend Microservice development
-put below script in the user data area in the Advance tab (update server number accordingly)
-Use same security group and for Server 02 which got created while creating Front end Server 01
-#!/bin/bash
-sudo su
-yum update -y
-yum install httpd -y
-cd /var/www/html
-echo "Welcome To Microservice App Setup Demo - Server_01" >index.html (echo "<html><h1>Server_01</h1></html>">index.html)
-service httpd start
-chkconfig httpd on
+1) Create Two EC2 Instance FESVR01 For Frontend Microservice development server 01
+Download file FrontEndServer01 and put that bash script into the user data area in the Advance tab
 
-2) Create Two EC2 Instances For Train Microservice development
-put below script in the user data area in the Advance tab (update server number accordingly)
-use same security group which got created while creating Front end Server 01
-#!/bin/bash
-sudo su
-yum update -y
-yum install httpd -y
-cd /var/www/html
-echo "<html><h1>Train_Server_01</h1></html>">index.html
-service httpd start
-chkconfig httpd on
+2) Create EC2 Instance FESVR02 For Frontend Microservice development server 02
+Use same security group which got created while creating Front End Server 01
+Download file FrontEndServer02 and put that bash script in the user data area in the Advance tab
 
-3) Create Two EC2 Instances For Flight Microservice development 
-put below script in the user data area in the Advance tab (update server number accordingly)
-use same security group which got created while creating Front end Server 01
-#!/bin/bash
-sudo su
-yum update -y
-yum install httpd -y
-cd /var/www/html
-echo "<html><h1>Flight_Server_01</h1></html>">index.html
-service httpd start
-chkconfig httpd on
+3) Create EC2 Instance TrainSVR01 For Train Microservice development server 01
+Use same security group which got created while creating Front End Server 01
+Download file TrainServer01 and put that bash script in the user data area in the Advance tab
 
-4) Add Inbound Rule in the security group for the port 80
+4) Create EC2 Instance TrainSVR01 For Train Microservice development server 02
+Use same security group which got created while creating Front End Server 01
+Download file TrainServer02 and put that bash script in the user data area in the Advance tab
+
+5) Create EC2 Instances FlightSVR01 For Flight Microservice development server 01
+Use same security group which got created while creating Front End Server 01
+Download file FlightServer01 and put that bash script in the user data area in the Advance tab
+
+6) Create EC2 Instances FlightSVR02 For Flight Microservice development server 02
+Use same security group which got created while creating Front End Server 01
+Download file FlightServer02 and put that bash script in the user data area in the Advance tab
+
+7) Add Inbound Rule in the security group to allow port 80 traffic
 
 Note: You can verify web service is working fine or not by accessing server with its public IP
 
@@ -76,7 +63,6 @@ Step 4
 19) Provide these information in the Condition section: key = vehicle value=Flight
 20) Provide these information in the Action section : Go to Target Group=FlightTG
 21) Save Rule
-
 
 #Test
 

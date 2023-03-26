@@ -79,7 +79,7 @@ Step 4
 
 Goto Load Balancer "mymsalb01", from general tab copy dns name of the LB
 
-Brouse URL for Front End Web page: <dns name of the LB>\
+Brouse URL for Front End Web page: http:\\dns_name_of_the_LB\
    
 Brouse URL for Train Web Page: <dns name of the LB>\?vehicle=train
    

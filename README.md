@@ -45,25 +45,25 @@ Note: You can verify web service is working fine by bwosing Web server using its
 # Phase 2: Create Load Balancer
 
 Step I
-1) Goto EC2 Dashboard > Load Balancer > Create Load Balancer
-2) Select Application Load Balancer > provide LB name "mymsalb01"
-3) Select same security group which got created while creating Front end Server 01
+1) Goto EC2 Dashboard > Load Balancer > Application Load Balancer section click on Create
+2) Provide LB name "mymsalb01"
+3) Select same security group which got created while creating Front End Server 01
 4) Select all Availibility Zones
-5) Click next
+5) Leave default VPC
 
 Step II
 
-6) In the Taeget Group section click on create Target Group
-7) create New Target Group
+6) Go to Listeners and Routing Section
+7) Click on Create target group
 8) Provide Target Group Name "TrainTG" 
-9) select Two EC2 Instances created for Train web server pool
-10)
-11) 
-12) Follow steps 7 - 11 to create "FlightTG"
+9) Select Two EC2 Instances created for Train web server pool
+10) Click on Include as pending below
+11) Click on Create target group
+12) Follow steps 7-11 to create Target Group "FlightTG"
 
 Step III
 
-13) Goto Load Balancer Tab > refresh Taeget Group section > select "TrainTG" > Create Load Balancer
+13) Goto Load Balancer Tab > In the Listeners and Routing Section refresh Forward To > select "TrainTG" > Create Load Balancer
 
 
 Step IV

@@ -43,14 +43,14 @@ Note: You can verify web service is working fine or not by accessing server with
 
 # Phase 2: Create Load Balancer
 
-Step 1
+Step I
 1) Goto EC2 Dashboard > Load Balancer > Create Load Balancer
 2) Select Application Load Balancer > provide LB name "mymsalb01"
 3) Select same security group which got created while creating Front end Server 01
 4) Select all Availibility Zones
 5) Click next
 
-Step 2
+Step II
 
 6) In the Taeget Group section click on create Target Group
 7) create New Target Group
@@ -58,14 +58,14 @@ Step 2
 9) select Two EC2 Instances created for Train web server pool
 10)
 11) 
-12) Follow 7 - 11 to create "FlightTG"
+12) Follow steps 7 - 11 to create "FlightTG"
 
-Step 3
+Step III
 
 13) Goto Load Balancer Tab > refresh Taeget Group section > select "TrainTG" > Create Load Balancer
 
 
-Step 4
+Step IV
 
 14) Goto Load Balancer Tab > "mymsalb01" > Listeners > HTTP:80 > rules > Manage Rules > + > Insert Rules
 15) Provide these information in the Condition section: key = vehicle value=train

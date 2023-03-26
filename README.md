@@ -4,37 +4,37 @@
 
 1) Create t2 micro EC2 Instance FESVR01 For Frontend Web server 01
 
-   Download file FrontEndServer01 and put that bash script into the user data area in the Advance tab
+   Download file FrontEndServer01 and put that bash script into the user data area in the Advance tab while creating instance
 
 2) Create t2 micro EC2 Instance FESVR02 For Frontend Web server 02
 
    Use same security group which got created while creating Front End Server 01
 
-   Download file FrontEndServer02 and put that bash script in the user data area in the Advance tab
+   Download file FrontEndServer02 and put that bash script in the user data area in the Advance tab while creating instance
 
 3) Create t2 micro EC2 Instance TrainSVR01 For Train Microservice Web server 01
 
    Use same security group which got created while creating Front End Server 01
 
-   Download file TrainServer01 and put that bash script in the user data area in the Advance tab
+   Download file TrainServer01 and put that bash script in the user data area in the Advance tab while creating instance
 
 4) Create t2 micro EC2 Instance TrainSVR01 For Train Microservice Web server 02
 
    Use same security group which got created while creating Front End Server 01
 
-   Download file TrainServer02 and put that bash script in the user data area in the Advance tab
+   Download file TrainServer02 and put that bash script in the user data area in the Advance tab while creating instance
 
 5) Create t2 micro EC2 Instance FlightSVR01 For Flight Microservice Web server 01
 
    Use same security group which got created while creating Front End Server 01
 
-   Download file FlightServer01 and put that bash script in the user data area in the Advance tab
+   Download file FlightServer01 and put that bash script in the user data area in the Advance tab while creating instance
 
 6) Create t2 micro EC2 Instance FlightSVR02 For Flight Microservice Web server 02
 
    Use same security group which got created while creating Front End Server 01
 
-   Download file FlightServer02 and put that bash script in the user data area in the Advance tab
+   Download file FlightServer02 and put that bash script in the user data area in the Advance tab while creating instance
 
 7) Add Inbound Rule in the security group to allow port 80 traffic
 
